@@ -144,7 +144,7 @@ CREATE TABLE EpisodeComment (
         REFERENCES Episode(AnimeId, SeasonNo, EpisodeNo)
 );
 
--- ======== INSERTS (min 5 rows per table) =========
+-- ======== INSERTS  =========
 
 -- User
 INSERT INTO "User" VALUES (1, 'dinesh51', 'dinesh@example.com', 'pass123', 'pic1.jpg', TO_DATE('2023-06-01', 'YYYY-MM-DD'));
@@ -244,7 +244,7 @@ INSERT INTO EpisodeComment VALUES (604, 4, 13, 1, 1, 'Kira is insane...', SYSDAT
 INSERT INTO EpisodeComment VALUES (605, 5, 14, 1, 1, 'AOT opening gave chills', SYSDATE-6);
 --
 --
-----SHOW DATA
+-- ===== SHOW DATA =====
 SELECT * FROM "User";
 SELECT * FROM "Subscription";
 SELECT * FROM Subscribes;
@@ -264,7 +264,7 @@ SELECT * FROM WatchHistory;
 SELECT * FROM Review;
 SELECT * FROM EpisodeComment;
 
--- ========== CrunchyStreamDB: 30 SQL Queries ==========
+-- ========== SQL QUERIES ==========
 
 -- 1. List all anime released after 2010
 SELECT Title, ReleaseDate
